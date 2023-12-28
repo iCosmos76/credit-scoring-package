@@ -2,7 +2,7 @@
 
 ## Общая информация
 
-Данный проект представляет собой пакет Python, предназначенный для работы с данными, связанный с кампаниями прямого маркетинга (телефонными звонками) португальского банковского учреждения, который может быть использован для изучения структуры ML моделей, задействованных в Production сфере.
+Данный проект представляет собой пакет Python, предназначенный для работы с данными, связанный с кампаниями прямого маркетинга (телефонными звонками) португальского банковского учреждения, который может быть использован для изучения структуры ML моделей, задействованных в Production сфере, а также предсказания вероятности дефолта клиента в данном банке.
 
 ## Структура кода 
 ### Configs
@@ -34,6 +34,7 @@ Pipeline установлен в credit_scoring_model/pipeline.py файл. Об
 Для установки пакета запустите 
 
 ```
+pip install pandas
 pip install credit-scoring-model
 ```
 
@@ -43,9 +44,15 @@ pip install credit-scoring-model
 from credit_scoring_model.predict import make_prediction
 
 # Пример входных данных
-input_dict = {'ID': [7], 'CRIM': [0.08829], 'ZN': [12.5], 'INDUS': [7.87], 'CHAS': [0.0], 
-              'NOX': [0.524], 'RM': [6.012], 'AGE': [66.6], 'DIS': [5.5605], 'RAD': [5.0], 
-              'TAX': [311.0], 'PTRATIO': [15.2], 'B': [395.6], 'LSTAT': [12.43]}
+from credit_scoring_model.predict import make_prediction
+import pandas as pd
+
+input_dict = {'age': [20], 'job': [8], 'marital': [2], 'education': [1], 'default': [0], 
+              'balance': [502], 'housing': [0], 'loan': [0], 'contact': [0], 'day': [30], 
+              'month': [0], 'duration': [261], 'campaign': [1], 'pdays': [-1], 'previous': [0],
+              'poutcome': [3]}
+
+input_dict = pd.DataFrame(input_dict)
 
 result = make_prediction(input_data=input_dict)
 
