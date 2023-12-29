@@ -30,28 +30,27 @@ Pipeline установлен в credit_scoring_model/pipeline.py файл. Об
 и [flake8](https://pypi.org/project/flake8/)): `tox -e stylechecks`
 
 ## Описание признаков
-1 - age (numeric)
-
-2 - job : тип работы (categorical: "admin.","unknown","unemployed","management","housemaid","entrepreneur","student", "blue-collar","self-employed","retired","technician","services")
-3 - marital : семейное положение (categorical: "married","divorced","single"; примечание: "divorced" означает разведенный или овдовевший)
-4 - education : образование (categorical: "unknown","secondary","primary","tertiary")
-5 - default: есть ли дефолт по кредиту (binary: "yes","no")
-6 - balance: среднегодовой баланс, в евро (numeric)
-7 - housing: есть ли жилищный кредит (binary: "yes","no")
-8 - loan: есть ли личный заем (binary: "yes","no")
+1) age (numeric)
+2) job - тип работы (categorical: "admin.","unknown","unemployed","management","housemaid","entrepreneur","student", "blue-collar","self employed","retired","technician","services")
+3) marital : семейное положение (categorical: "married","divorced","single"; примечание: "divorced" означает разведенный или овдовевший)
+4) education : образование (categorical: "unknown","secondary","primary","tertiary")
+5) default: есть ли дефолт по кредиту (binary: "yes","no")
+6) balance: среднегодовой баланс, в евро (numeric)
+7) housing: есть ли жилищный кредит (binary: "yes","no")
+8) loan: есть ли личный заем (binary: "yes","no")
 
 Последний контакт с банком:
-9 - contact: тип контактной связи (categorical: "unknown","telephone","cellular")
-10 - day: последний контактный день месяца (numeric)
-11 - month: месяц последнего контакта в году (categorical: "jan", "feb", "mar", ..., "nov", "dec")
-12 - duration: продолжительность последнего контакта, в секундах (numeric)
+9) contact: тип контактной связи (categorical: "unknown","telephone","cellular")
+10) day: последний контактный день месяца (numeric)
+11) month: месяц последнего контакта в году (categorical: "jan", "feb", "mar", ..., "nov", "dec")
+12) duration: продолжительность последнего контакта, в секундах (numeric)
 Другие атрибуты:
-13 - campaign: количество контактов, осуществленных в ходе данной кампании и для данного клиента (numeric, включает последний контакт)
-14 - pdays: количество дней, прошедших с момента последнего обращения к клиенту в рамках предыдущей кампании (numeric, -1 означает, что с клиентом ранее не связывались)
-15 - previous: количество контактов, осуществленных до начала данной кампании и для данного клиента (numeric)
-16 - poutcome: результат предыдущей маркетинговой кампании (categorical: "unknown","other","failure","success")
+13) campaign: количество контактов, осуществленных в ходе данной кампании и для данного клиента (numeric, включает последний контакт)
+14) pdays: количество дней, прошедших с момента последнего обращения к клиенту в рамках предыдущей кампании (numeric, -1 означает, что с клиентом ранее не связывались)
+15) previous: количество контактов, осуществленных до начала данной кампании и для данного клиента (numeric)
+16) poutcome: результат предыдущей маркетинговой кампании (categorical: "unknown","other","failure","success")
 Таргет:
-17 - y - был ли предоставлен кредит (binary: "yes","no")
+17) y - был ли предоставлен кредит (binary: "yes","no")
 
 ## Соответствия исходных значений кодам
 1) age: положительные числа - 20, 27, 40
