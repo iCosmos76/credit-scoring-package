@@ -100,7 +100,6 @@ Pipeline установлен в credit_scoring_model/pipeline.py файл. Об
 Для установки пакета запустите 
 
 ```
-pip install pandas
 pip install credit-scoring-model
 ```
 
