@@ -63,7 +63,7 @@ Pipeline установлен в credit_scoring_model/pipeline.py файл. Об
 'student': 8,
 'technician': 9,
 'unemployed': 10,
-'unknown': 11},
+'unknown': 11,
 3) marital:'divorced': 0, 'married': 1, 'single': 2
 4) education: 'primary': 0, 'secondary': 1, 'tertiary': 2, 'unknown': 3
 5) default: 'no': 0, 'yes': 1
@@ -83,7 +83,7 @@ Pipeline установлен в credit_scoring_model/pipeline.py файл. Об
 'may': 8,
 'nov': 9,
 'oct': 10,
-'sep': 11},
+'sep': 11,
 11) duration: положительные числа - 261, 302, 563
 12) campaign: положительные числа - 1, 6, 10
 13) pdays: положительные числа - 1, 2, 4 и отрицательное -1
