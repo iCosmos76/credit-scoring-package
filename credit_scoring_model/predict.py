@@ -6,6 +6,7 @@ from credit_scoring_model import __version__ as _version
 from credit_scoring_model.config.core import config
 from credit_scoring_model.processing.data_manager import load_pipeline
 from credit_scoring_model.processing.validation import validate_inputs
+from sklearn.preprocessing import MinMaxScaler
 
 pipeline_file_name = f"{config.app_config.pipeline_save_file}{_version}.pkl"
 _loan_approval_pipe = load_pipeline(file_name=pipeline_file_name)
@@ -18,6 +19,7 @@ def make_prediction(
     """Make a prediction using a saved model pipeline."""
 
     data = pd.DataFrame(input_data)
+
     validated_data, errors = validate_inputs(input_data=data)
 
     results: t.Dict[str, t.Any] = {"preds": None, "version": _version, "errors": errors}

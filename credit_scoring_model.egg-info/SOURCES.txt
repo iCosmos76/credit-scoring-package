@@ -2,8 +2,6 @@ MANIFEST.in
 README.md
 pyproject.toml
 setup.py
-./requirements/requirements.txt
-./requirements/test_requirements.txt
 credit_scoring_model/VERSION
 credit_scoring_model/__init__.py
 credit_scoring_model/config.yml
@@ -17,8 +15,16 @@ credit_scoring_model.egg-info/requires.txt
 credit_scoring_model.egg-info/top_level.txt
 credit_scoring_model/config/__init__.py
 credit_scoring_model/config/core.py
-credit_scoring_model/datasets/bhousing.csv
+credit_scoring_model/datasets/bank.csv
+credit_scoring_model/datasets/xtest.csv
+credit_scoring_model/datasets/xtrain.csv
+credit_scoring_model/datasets/ytest.csv
+credit_scoring_model/datasets/ytrain.csv
 credit_scoring_model/processing/__init__.py
 credit_scoring_model/processing/data_manager.py
 credit_scoring_model/processing/validation.py
-credit_scoring_model/trained_models/credit_scoring_model_v0.0.1.pkl
+credit_scoring_model/trained_models/credit_scoring_model_output_v0.0.12.pkl
+requirements/requirements.txt
+requirements/test_requirements.txt
+tests/test_features.py
+tests/test_prediction.py
