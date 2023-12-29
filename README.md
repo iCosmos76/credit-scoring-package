@@ -31,7 +31,7 @@ Pipeline установлен в credit_scoring_model/pipeline.py файл. Об
 
 ## Описание признаков
 Общие атрибуты: 1-8; последний контакт с банком: 9-12; другие атрибуты: 13-16; таргет: 17
-1) age (numeric)
+1) age : возраст (numeric)
 2) job : тип работы (categorical: "admin.","unknown","unemployed","management","housemaid","entrepreneur","student", "blue-collar","self employed","retired","technician","services")
 3) marital : семейное положение (categorical: "married","divorced","single"; примечание: "divorced" означает разведенный или овдовевший)
 4) education : образование (categorical: "unknown","secondary","primary","tertiary")
