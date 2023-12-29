@@ -40,7 +40,7 @@ Pipeline установлен в credit_scoring_model/pipeline.py файл. Об
 8) loan: есть ли личный заем (binary: "yes","no")
 
 Последний контакт с банком:
-9) contact: тип контактной связи (categorical: "unknown","telephone","cellular")
+9) contact: тип контактной связи (categorical: "unknown","telephone","cellular") \n
 10) day: последний контактный день месяца (numeric)
 11) month: месяц последнего контакта в году (categorical: "jan", "feb", "mar", ..., "nov", "dec")
 12) duration: продолжительность последнего контакта, в секундах (numeric)
