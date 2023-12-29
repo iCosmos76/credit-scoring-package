@@ -93,7 +93,7 @@ Pipeline установлен в credit_scoring_model/pipeline.py файл. Об
 'other': 1,
 'success': 2,
 'unknown': 3
-16) Значение таргет переменной. y: 'no': 0, 'yes': 1
+16) y: 'no': 0, 'yes': 1
 
 ## Как установить пакет
 
